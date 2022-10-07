@@ -16,11 +16,11 @@
         die();
     }
 
-        $sql = "INSERT INTO pessoas (nomecompleto, endereco, telefone, email)" . "VALUES ('{$_POST["nomecompleto"]}', '{$_POST["endereco"]}', '{$_POST["telefone"]}', '{$_POST["email"]}')";
+        $sql = "INSERT INTO pessoas (nome, endereco, telefone, email)" . "VALUES ('{$_POST["nome"]}', '{$_POST["endereco"]}', '{$_POST["telefone"]}', '{$_POST["email"]}')";
 
     $conexao->query($sql);
     $conexao->close();
-
+  
     echo "Cadastrado com sucesso!";
 
     header("refresh:1;url=cadastro.html");

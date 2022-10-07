@@ -9,7 +9,7 @@ $nomeBanco    = "empresa";
 
 $conexao = mysqli_connect($nomeServidor, $nomeUsuario, $senha, $nomeBanco);
 
-if($conexao){
+if($conexao) {
     // echo "ok";
     
 } else{
